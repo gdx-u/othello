@@ -1,0 +1,33 @@
+.square {
+    display: block;
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    border: 1px solid;
+    background: green;
+}
+
+/* .tile {
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    margin: 4px 4px 4px 4px;
+} */
+
+.tile {
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    margin: 4px;
+    perspective: 1000px; /* Enables 3D effect */
+    transition: background-color 0.6s ease;
+    background: white;
+}
+
+.tile.flipped {
+    background: black;
+}
